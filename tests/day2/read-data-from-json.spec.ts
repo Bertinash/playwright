@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import * as fs from 'fs';
-const data1 = JSON.parse(fs.readFileSync('../playwright-project/tests/day2/single-user.json', 'utf-8')).login;
+const data1 = JSON.parse(fs.readFileSync('../playwright-project/tests/day2/data/single-user.json', 'utf-8')).login;
 import { SaucedemoPage } from './saucedemo-page';
 
 test('test', async ({ page }) => {
