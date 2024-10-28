@@ -3,6 +3,7 @@ import { LoginPage } from '../pages/loginPage';
 import { HomePage } from '../pages/homePage';
 
 import * as fs from 'fs';
+import exp from 'constants';
 
 const testData = JSON.parse(fs.readFileSync('./tests/sauceDemo/data/userData.json', 'utf8'));
 
@@ -37,5 +38,13 @@ test.describe('SauceDemo basic automation test with data', () => {
         await homePage.navigateToCart();
         const cartUrl = page.url();
         expect(cartUrl).toContain('cart.html');
+      });
+
+      test('Verify that there is a count count', async({ page }) =>{
+        const {validUsername,validPassword} = testData.loginData;
+        await loginPage.login(validUsername, validPassword);
+        await homePage.addItemToCart();
+        const itemCount = await homePage.getCartItemCount();
+        expect(itemCount).toBeGreaterThanOrEqual(1);
       });
 })
