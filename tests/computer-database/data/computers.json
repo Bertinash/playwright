@@ -1,0 +1,20 @@
+[
+    {
+        "name": "MacBook Pro 14inch",
+        "introduced": "2023-10-01",
+        "discontinued": "2024-10-28",
+        "company": "Apple Inc."
+    },
+    {
+        "name": "Asus ROG G551JW",
+        "introduced": "2020-04-11",
+        "discontinued": "2022-05-05",
+        "company": "ASUS"
+    },
+    {
+        "name": "Vaio",
+        "introduced": "2010-12-25",
+        "discontinued": "2014-07-04",
+        "company": "Sony"
+    }
+]
