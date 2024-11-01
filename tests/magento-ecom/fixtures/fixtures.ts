@@ -1,7 +1,7 @@
 import {test as base, Page} from '@playwright/test'
 import { CreateAnAccountPage } from '../pages/createAnAccountPage'
 import { ProductPage } from '../pages/productPage';
-
+export {expect} from '@playwright/test';
 type Fixtures = {
     createAnAccountPage: CreateAnAccountPage;
     productPage: ProductPage;
