@@ -6,12 +6,6 @@ import { create } from 'domain';
 import exp from 'constants';
 
 
-interface ComputerData {
-    name: string;
-    introduced: string;
-    discontinued: string;
-    company: string;
-}
 const testData = JSON.parse(fs.readFileSync('./tests/computer-database/data/computers.json', 'utf-8'));
 
 

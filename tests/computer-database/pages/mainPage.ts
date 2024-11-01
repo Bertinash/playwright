@@ -31,6 +31,7 @@ export class MainPage{
     async verifySearchResultMessage() {
         const resultMessageElement = this.page.locator('h1:has-text("computers found")');
         const resultMessage = await resultMessageElement.innerText();
+        await this.page.screenshot({path: '/Users/martinklimovski/Playwright /playwright-project/tests/computer-database/screenshots/screenshot test.png'});
         return resultMessage
     }
     async getSuccessMessage() {
