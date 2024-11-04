@@ -1,0 +1,18 @@
+{
+    "shippingPage": {
+        "email": "#customer-email-fieldset input[name='username']",
+        "firstName": "input[name='firstname']",
+        "lastName": "input[name='lastname']",
+        "streetName": "input[name='street[0]']",
+        "city": "input[name='city']",
+        "stateDropdown": "select[name='region_id']",
+        "zipCode": "input[name='postcode']",
+        "countryDropdown": "select[name='country_id']",
+        "phoneNumber": "input[name='telephone']",
+        "nextButton": "button.continue"
+    },
+    "reviewPage": {
+        "placeOrderButton": "button.action.primary.checkout",
+        "successMessage": ".checkout-success__title"
+    }
+}

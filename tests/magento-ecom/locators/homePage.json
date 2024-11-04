@@ -1,0 +1,7 @@
+{
+    "homePage":{
+        "miniCartButton":"#a.showcart",
+        "goToCartPage":"#a:has-text('View and Edit Cart')",
+        "proceedToCheckout":"#button:has-text('Proceed to Checkout')"
+    }
+}
