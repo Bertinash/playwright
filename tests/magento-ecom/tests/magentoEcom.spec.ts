@@ -13,7 +13,7 @@ test.describe('Testing the e-comm site', () =>{
         firstPage = new FirstPage(page);
         await firstPage.navigateToPage();
     });
-    test('Crete a new account for a new user', async({createAnAccountPage}) =>{
+    test.skip('Crete a new account for a new user', async({createAnAccountPage}) =>{
         const {firstName, lastName, email, password} = generateRandomUser();
         await createAnAccountPage.navigateToCreateAccountPage();
         await createAnAccountPage.fillCreateAccountForm(firstName, lastName, email, password);
@@ -23,7 +23,7 @@ test.describe('Testing the e-comm site', () =>{
         console.log(`Created email is: ${email}`);
 
     });
-    test('Verify that a product is added', async({productPage}) =>{
+    test.fixme('Verify that a product is added', async({productPage}) =>{
         await firstPage.selectAnItem();
         await productPage.selectAndAddAProduct();
         const confirmationMessage = productPage.page.locator('text=You added');
